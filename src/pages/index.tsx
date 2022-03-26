@@ -1,12 +1,11 @@
 import type { NextPage } from 'next';
-import { useTheme } from 'next-themes';
-import { useEffect } from 'react';
-import Sidebar from '../components/organisms/Sidebar/Sidebar';
 
 const Home: NextPage = () => {
   return (
     <>
-    
+      <h1>
+        TESTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+      </h1>
     </>
   );
 };
