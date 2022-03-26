@@ -16,10 +16,11 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@pages/*": ["pages/*"],
-      "@components/*": ["components/*"],
-      "@hooks/*": ["hooks/*"],
-      "@styles/*": ["styles/*"]
+      "pages/*": ["./pages/*"],
+      "components/*": ["./components/*"],
+      "hooks/*": ["./hooks/*"],
+      "styles/*": ["./styles/*"],
+      "constants/*": ["./constants/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
