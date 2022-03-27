@@ -5,9 +5,10 @@ import { SidebarRoute } from 'types';
 
 interface SidebarItemsProps {
   itemsList: SidebarRoute[];
+  collapsed: boolean;
 }
 
-const SidebarItems = ({ itemsList }: SidebarItemsProps) => (
+const SidebarItems = ({ itemsList, collapsed = false }: SidebarItemsProps) => (
   <ul>
     {itemsList.map(({ title, icon, routeUrl }, i) => (
       <MenuItem
@@ -16,11 +17,17 @@ const SidebarItems = ({ itemsList }: SidebarItemsProps) => (
         title={title}
         icon={icon}
         routeUrl={routeUrl}
+        iconOnly={collapsed}
       />
     ))}
 
     <div className="bottom-6 absolute">
-      <MenuItem title="Log out" icon={<HiLogout />} routeUrl="/logout" />
+      <MenuItem
+        title="Log out"
+        icon={<HiLogout />}
+        routeUrl="/logout"
+        iconOnly={collapsed}
+      />
     </div>
   </ul>
 );

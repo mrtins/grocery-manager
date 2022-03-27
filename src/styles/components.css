@@ -1,0 +1,10 @@
+@layer components {
+  .sidebar {
+    @apply bg-white dark:bg-gray-900 shadow-lg sticky h-screen top-0;
+    transition: width 320ms ease-in-out 0s;
+  }
+
+  .new-transaction-button {
+    @apply bg-blue-500 hover:bg-blue-600 rounded-full p-3 text-white mx-auto mt-6 drop-shadow-md;
+  }
+}
