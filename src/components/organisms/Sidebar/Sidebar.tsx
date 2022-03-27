@@ -1,15 +1,15 @@
-import MenuItem from 'components/atoms/MenuItem/MenuItem';
 import SidebarItems from 'components/molecules/SidebarItems/SidebarItems';
 import SidebarRoutes from 'constants/SidebarRoutes';
-import { HiLogout, HiPlus } from 'react-icons/hi';
+import React from 'react';
+import { HiPlus } from 'react-icons/hi';
 
-const SideBar = () => {
+const Sidebar = () => {
   const handleNewButtonClick = () => console.log('TODO');
 
   return (
     <aside
       aria-label="Sidebar"
-      className="w-52 bg-white dark:bg-gray-900 shadow-lg"
+      className="w-52 bg-white dark:bg-gray-900 shadow-lg sticky h-screen top-0"
     >
       <div className="p-5">
         <h3 className="font-bold text-left text-3xl">Manager</h3>
@@ -27,4 +27,4 @@ const SideBar = () => {
   );
 };
 
-export default SideBar;
+export default Sidebar;
