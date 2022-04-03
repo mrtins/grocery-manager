@@ -24,16 +24,19 @@ const MenuItem = ({
       data-tooltip-placement="right"
       className={`${
         pathname === routeUrl &&
-        'text-blue-600 border-l-blue-600 font-medium border-l-4'
-      } my-4 p-1 text-lg flex items-center justify-start cursor-pointer hover:border-l-blue-600 hover:text-blue-600 hover:font-medium hover:border-l-4`}
+        'font-medium text-blue-600 md:border-l-blue-600 md:border-l-4'
+      } my-4 md:p-1 text-lg flex items-center justify-start cursor-pointer md:hover:border-l-4 md:hover:border-l-blue-600 md:hover:text-blue-600 hover:font-medium md:w-full`}
     >
       <Link href={routeUrl} passHref>
-        <div className="ml-4 flex items-center" title={title}>
+        <div className="md:ml-4 flex items-center" title={title}>
           <i className="text-blue-600">
             {icon ? icon : <HiHome data-testid="home-icon" />}
           </i>
           {!iconOnly && (
-            <span data-testid="menu-item-title" className="ml-6 text-base">
+            <span
+              data-testid="menu-item-title"
+              className="ml-4 md:ml-6 text-base"
+            >
               {title}
             </span>
           )}

@@ -5,7 +5,7 @@ import { SidebarRoute } from 'types';
 
 interface SidebarItemsProps {
   itemsList: SidebarRoute[];
-  collapsed: boolean;
+  collapsed?: boolean;
 }
 
 const SidebarItems = ({ itemsList, collapsed = false }: SidebarItemsProps) => (
@@ -21,7 +21,7 @@ const SidebarItems = ({ itemsList, collapsed = false }: SidebarItemsProps) => (
       />
     ))}
 
-    <div className="bottom-6 absolute">
+    <div className="md:bottom-6 md:absolute md:border-0 mt-6 pt-2 border-t border-slate-300 ">
       <MenuItem
         title="Log out"
         icon={<HiLogout />}

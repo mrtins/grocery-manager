@@ -1,7 +1,11 @@
 @layer components {
-  .sidebar {
-    @apply bg-white dark:bg-gray-900 shadow-lg sticky h-screen top-0;
+  .navbar {
+    @apply bg-white dark:bg-gray-900 shadow-lg sticky;
     transition: width 320ms ease-in-out 0s;
+  }
+
+  .show-menu-nav {
+    @apply fixed top-4 right-4 w-full max-w-xs bg-white rounded-lg shadow-lg p-6 text-base font-semibold;
   }
 
   .new-transaction-button {
