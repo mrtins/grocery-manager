@@ -15,15 +15,11 @@ export default function NewTransationButton({
       type="button"
       onClick={handleClick}
       className={classNames(
-        'new-transaction-button',
-        `${
-          !collapseSidebar
-            ? 'w-36 flex justify-evenly items-center'
-            : 'flex mb-6'
-        } `,
+        'new-transaction-button flex',
+        `${!collapseSidebar ? 'w-36 justify-evenly items-center' : 'mb-6'} `,
       )}
     >
-      <HiPlus /> {!collapseSidebar && 'Novo'}
+      <HiPlus /> <span>{!collapseSidebar && 'Novo'}</span>
     </button>
   );
 }

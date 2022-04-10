@@ -20,22 +20,41 @@ export default function NavbarMenuDesktop({
     <>
       {!collapseSidebar ? (
         <div className="flex justify-between items-center p-4">
-          <Image src="/brand-logo.png" alt="me" width="32" height="32" />
+          <Image
+            src="/brand-logo.png"
+            alt="Brand logo"
+            width="32"
+            height="32"
+          />
 
           <h3 className="font-bold text-left text-3xl">Manager</h3>
         </div>
       ) : (
         <div className="pr-2 pl-2 pt-4">
-          <Image src="/brand-logo.png" alt="me" width="64" height="64" />
+          <Image
+            src="/brand-logo.png"
+            alt="Brand logo"
+            width="64"
+            height="64"
+          />
         </div>
       )}
 
       <button
-        id="collapse-sidebar-button"
+        aria-label="collapse-button"
+        type="button"
         className="rounded-full text-white text-xl bg-blue-500 hover:bg-blue-600 absolute -right-2"
         onClick={handleCollapseSidebar}
       >
-        {collapseSidebar ? <HiChevronRight /> : <HiChevronLeft />}
+        {collapseSidebar ? (
+          <span data-testid="chevron-right">
+            <HiChevronRight />
+          </span>
+        ) : (
+          <span data-testid="chevron-left">
+            <HiChevronLeft />
+          </span>
+        )}
       </button>
 
       <NewTransationButton
