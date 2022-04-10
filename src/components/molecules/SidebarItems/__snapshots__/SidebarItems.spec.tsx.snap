@@ -3,13 +3,16 @@
 exports[`SidebarItems component SidebarItems should match snapshot 1`] = `
 <ul>
   <li
-    class="false my-4 p-1 text-lg flex items-center justify-start cursor-pointer hover:border-l-blue-600 hover:text-blue-600 hover:font-medium hover:border-l-4"
+    class="false my-4 md:p-1 text-lg flex items-center justify-start cursor-pointer md:hover:border-l-4 md:hover:border-l-blue-600 md:hover:text-blue-600 hover:font-medium md:w-full"
+    data-tooltip-placement="right"
+    data-tooltip-target="tooltip-right"
   >
     <div
-      class="ml-4 flex items-center"
+      class="md:ml-4 flex items-center"
       href="/"
+      title="Dashboard"
     >
-      <div
+      <i
         class="text-blue-600"
       >
         <svg
@@ -25,23 +28,26 @@ exports[`SidebarItems component SidebarItems should match snapshot 1`] = `
             d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
           />
         </svg>
-      </div>
-      <p
-        class="ml-6"
+      </i>
+      <span
+        class="ml-4 md:ml-6 text-base"
         data-testid="menu-item-title"
       >
         Dashboard
-      </p>
+      </span>
     </div>
   </li>
   <li
-    class="false my-4 p-1 text-lg flex items-center justify-start cursor-pointer hover:border-l-blue-600 hover:text-blue-600 hover:font-medium hover:border-l-4"
+    class="false my-4 md:p-1 text-lg flex items-center justify-start cursor-pointer md:hover:border-l-4 md:hover:border-l-blue-600 md:hover:text-blue-600 hover:font-medium md:w-full"
+    data-tooltip-placement="right"
+    data-tooltip-target="tooltip-right"
   >
     <div
-      class="ml-4 flex items-center"
+      class="md:ml-4 flex items-center"
       href="/shopping-list"
+      title="Compras"
     >
-      <div
+      <i
         class="text-blue-600"
       >
         <svg
@@ -59,23 +65,26 @@ exports[`SidebarItems component SidebarItems should match snapshot 1`] = `
             fill-rule="evenodd"
           />
         </svg>
-      </div>
-      <p
-        class="ml-6"
+      </i>
+      <span
+        class="ml-4 md:ml-6 text-base"
         data-testid="menu-item-title"
       >
         Compras
-      </p>
+      </span>
     </div>
   </li>
   <li
-    class="false my-4 p-1 text-lg flex items-center justify-start cursor-pointer hover:border-l-blue-600 hover:text-blue-600 hover:font-medium hover:border-l-4"
+    class="false my-4 md:p-1 text-lg flex items-center justify-start cursor-pointer md:hover:border-l-4 md:hover:border-l-blue-600 md:hover:text-blue-600 hover:font-medium md:w-full"
+    data-tooltip-placement="right"
+    data-tooltip-target="tooltip-right"
   >
     <div
-      class="ml-4 flex items-center"
+      class="md:ml-4 flex items-center"
       href="/stats"
+      title="Estatisticas"
     >
-      <div
+      <i
         class="text-blue-600"
       >
         <svg
@@ -91,23 +100,26 @@ exports[`SidebarItems component SidebarItems should match snapshot 1`] = `
             d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"
           />
         </svg>
-      </div>
-      <p
-        class="ml-6"
+      </i>
+      <span
+        class="ml-4 md:ml-6 text-base"
         data-testid="menu-item-title"
       >
         Estatisticas
-      </p>
+      </span>
     </div>
   </li>
   <li
-    class="false my-4 p-1 text-lg flex items-center justify-start cursor-pointer hover:border-l-blue-600 hover:text-blue-600 hover:font-medium hover:border-l-4"
+    class="false my-4 md:p-1 text-lg flex items-center justify-start cursor-pointer md:hover:border-l-4 md:hover:border-l-blue-600 md:hover:text-blue-600 hover:font-medium md:w-full"
+    data-tooltip-placement="right"
+    data-tooltip-target="tooltip-right"
   >
     <div
-      class="ml-4 flex items-center"
+      class="md:ml-4 flex items-center"
       href="/categories"
+      title="Categorias"
     >
-      <div
+      <i
         class="text-blue-600"
       >
         <svg
@@ -123,23 +135,26 @@ exports[`SidebarItems component SidebarItems should match snapshot 1`] = `
             d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"
           />
         </svg>
-      </div>
-      <p
-        class="ml-6"
+      </i>
+      <span
+        class="ml-4 md:ml-6 text-base"
         data-testid="menu-item-title"
       >
         Categorias
-      </p>
+      </span>
     </div>
   </li>
   <li
-    class="false my-4 p-1 text-lg flex items-center justify-start cursor-pointer hover:border-l-blue-600 hover:text-blue-600 hover:font-medium hover:border-l-4"
+    class="false my-4 md:p-1 text-lg flex items-center justify-start cursor-pointer md:hover:border-l-4 md:hover:border-l-blue-600 md:hover:text-blue-600 hover:font-medium md:w-full"
+    data-tooltip-placement="right"
+    data-tooltip-target="tooltip-right"
   >
     <div
-      class="ml-4 flex items-center"
+      class="md:ml-4 flex items-center"
       href="/stores"
+      title="Mercados"
     >
-      <div
+      <i
         class="text-blue-600"
       >
         <svg
@@ -155,23 +170,26 @@ exports[`SidebarItems component SidebarItems should match snapshot 1`] = `
             d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
           />
         </svg>
-      </div>
-      <p
-        class="ml-6"
+      </i>
+      <span
+        class="ml-4 md:ml-6 text-base"
         data-testid="menu-item-title"
       >
         Mercados
-      </p>
+      </span>
     </div>
   </li>
   <li
-    class="false my-4 p-1 text-lg flex items-center justify-start cursor-pointer hover:border-l-blue-600 hover:text-blue-600 hover:font-medium hover:border-l-4"
+    class="false my-4 md:p-1 text-lg flex items-center justify-start cursor-pointer md:hover:border-l-4 md:hover:border-l-blue-600 md:hover:text-blue-600 hover:font-medium md:w-full"
+    data-tooltip-placement="right"
+    data-tooltip-target="tooltip-right"
   >
     <div
-      class="ml-4 flex items-center"
+      class="md:ml-4 flex items-center"
       href="/settings"
+      title="Configurações"
     >
-      <div
+      <i
         class="text-blue-600"
       >
         <svg
@@ -187,26 +205,29 @@ exports[`SidebarItems component SidebarItems should match snapshot 1`] = `
             d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z"
           />
         </svg>
-      </div>
-      <p
-        class="ml-6"
+      </i>
+      <span
+        class="ml-4 md:ml-6 text-base"
         data-testid="menu-item-title"
       >
         Configurações
-      </p>
+      </span>
     </div>
   </li>
   <div
-    class="bottom-6 absolute"
+    class="md:bottom-6 md:absolute md:border-0 mt-6 pt-2 border-t border-slate-300 "
   >
     <li
-      class="false my-4 p-1 text-lg flex items-center justify-start cursor-pointer hover:border-l-blue-600 hover:text-blue-600 hover:font-medium hover:border-l-4"
+      class="false my-4 md:p-1 text-lg flex items-center justify-start cursor-pointer md:hover:border-l-4 md:hover:border-l-blue-600 md:hover:text-blue-600 hover:font-medium md:w-full"
+      data-tooltip-placement="right"
+      data-tooltip-target="tooltip-right"
     >
       <div
-        class="ml-4 flex items-center"
+        class="md:ml-4 flex items-center"
         href="/logout"
+        title="Log out"
       >
-        <div
+        <i
           class="text-blue-600"
         >
           <svg
@@ -224,13 +245,13 @@ exports[`SidebarItems component SidebarItems should match snapshot 1`] = `
               fill-rule="evenodd"
             />
           </svg>
-        </div>
-        <p
-          class="ml-6"
+        </i>
+        <span
+          class="ml-4 md:ml-6 text-base"
           data-testid="menu-item-title"
         >
           Log out
-        </p>
+        </span>
       </div>
     </li>
   </div>
